@@ -44,13 +44,18 @@ header {
   color: white;
 }
 
+.entry-list-container {
+  display: flex;
+  justify-self: center;
+}
+
 .entry-list {
-  display: block;
+  padding-inline-start: 0px;
 }
 
 .journal-entry {
   display: flex;
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 .image-container {
@@ -61,6 +66,13 @@ header {
   flex-shrink: 0;
   margin-right: 19px;
 }
+
+@media (min-width: 375px) {
+  .image-container {
+    margin-right: 10px;
+  }
+};
+  
 
 .entry-image {
   height: 100%;

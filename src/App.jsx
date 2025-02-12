@@ -13,9 +13,11 @@ export default function App() {
     return (
         <>
             <Header/>
-            <ul className="entry-list">
-                {entryElements}
-            </ul>
+            <div className="entry-list-container">
+                <ul className="entry-list">
+                    {entryElements}
+                </ul>
+            </div>
         </>   
     );
 };
